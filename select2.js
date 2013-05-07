@@ -2930,6 +2930,9 @@ the specific language governing permissions and limitations under the Apache Lic
 
         // multialt
         opening: function () {
+			// this cannot be true
+			this.opts.closeOnSelect = false;
+			
             this.clearPlaceholder(); // should be done before super so placeholder is not used to search
             this.resizeSearch();
             this.dropdown.unbind("mousemove-filtered");
