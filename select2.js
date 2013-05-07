@@ -2958,6 +2958,9 @@ the specific language governing permissions and limitations under the Apache Lic
             this.dropdown.attr("id", "select2-drop");
 
             this.dropdown.show();
+			// set some important dropdown css
+			this.dropdown.css("overflow", "auto");
+			this.results.css("max-height", "none");
             this.positionDropdown();
 
             this.dropdown.addClass("select2-drop-active");
